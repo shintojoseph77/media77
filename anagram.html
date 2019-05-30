@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Anagram</title>
+	<script type="text/javascript">
+		string1=prompt("Enter First String");
+		string2=prompt("Enter Second String");
+		// Find the Length of both Words
+		len1=string1.length;
+		len2=string2.length;
+		// Check the both lengths are matching, and if the length is not matching display the words are not anagram
+		if(len1!=len2){
+			document.write("Entered Words are not Anagram");
+		}
+
+		// If the length are same checking the characters one by one equals or not
+		else{		
+
+		for(i=0;i<len1;i++){
+
+			// Initialize a variable to store, result of character matching count
+			 count=0;
+
+			 for(j=0;j<len2;j++){
+			 	
+			 // Checking (i)th position of first string with (j)th position of second string. the loop will work upto the length of strings.
+			 	if(string1[i]==string2[j]){
+			 		// Once the character matches the count will be incremented and the loop will work for next character of string 1.
+			 		count++;
+			 	}
+
+			 }				 
+
+				
+		}
+
+		// Check the count value is greater than 0. If it greater than 0, the strings are anagram.
+		 if(count>0){
+			 	document.write("Entered Words are Anagram");
+			 }
+			 else{
+			 	document.write("Entered Words are not Anagram")
+			 }
+
+		}
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
